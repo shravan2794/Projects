@@ -1,0 +1,17 @@
+<table style="width:100%">
+    <tr>
+      <th>ID</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+        {% for y in Register %}
+      <td>{{y.id}}</td>
+      <td>{{y.first_name}}</td>
+      <td>{{y.last_name}}</td>
+      <td>{{y.email}}</td>
+    </tr>
+        {% endfor %}
+     <center><a href='/register' class='btn btn-primary'>ADD NEW RECORDS</a></center>
+  </table>
